@@ -1,0 +1,89 @@
+\documentclass[10pt, twocolumn]{article}
+\usepackage[a4paper, top=17.8mm, bottom=17.8mm, left=16.5mm, right=16.5mm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cite}
+\usepackage{sectsty} % For customizing section fonts
+
+% Set spacing between columns
+\setlength{\columnsep}{12.7mm}
+
+% Custom Section Fonts
+\sectionfont{\fontsize{12}{14}\selectfont\bfseries}
+\subsectionfont{\fontsize{10}{12}\selectfont\bfseries}
+\subsubsectionfont{\fontsize{10}{12}\selectfont\itshape}
+
+% Title and Metadata
+\title{[LEAVE BLANK, DO NOT PUT AUTHOR’S NAME AND AFFILIATION]}
+\date{}
+
+\begin{document}
+
+\twocolumn[
+\maketitle
+\begin{center}
+    {\large Abstract} \\
+    These instructions give you guidelines for preparing papers for the *ELEKTRIKA* journal. Use this document as a LaTeX template.
+\end{center}
+
+\textbf{Keywords:} Enter up to five keywords here, separated by commas.
+
+\vspace{0.2cm}
+]
+
+% Main Sections
+\section{Introduction}
+This document serves as a template for creating submissions to the *ELEKTRIKA* journal. Structure your paper into sections, including an abstract, introduction, and main content. Ensure each section conforms to the journal’s two-column layout.
+
+\section{Formatting}
+The manuscript is in A4 size with 17.8 mm top and bottom margins and 16.5 mm left and right margins. Text should be set in 10 pt Times New Roman. The first paragraph of each section starts flush left, and subsequent paragraphs are indented by 0.36 cm.
+
+\subsection{Equations, Symbols, and Units}
+Use only SI units throughout the document. Insert equations using the `equation` environment, centered with numbers aligned to the right:
+
+\begin{equation}
+    E = mc^2
+\end{equation}
+
+Reference equations using the format "Equation (1)".
+
+\subsection{Figures and Tables}
+Place figures and tables close to where they are first mentioned. Figure captions should be centered below each figure, and table captions centered above each table.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image} % Replace with actual image
+    \caption{Figure caption example}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \caption{Table caption example}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Column 1 & Column 2 & Column 3 \\
+        \hline
+        Data 1 & Data 2 & Data 3 \\
+        Data 4 & Data 5 & Data 6 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Conclusion}
+The conclusion should provide a summary of the main points without replicating the abstract. Discuss the importance of the findings or suggest potential applications and extensions.
+
+\section*{Acknowledgment}
+[Leave blank; you can add acknowledgments once the paper is accepted.]
+
+\begin{thebibliography}{9}
+    \bibitem{ref1} G. O. Young, "Synthetic structure of industrial plastics," in \textit{Plastics}, 2nd ed., vol. 3, J. Peters, Ed. New York: McGraw-Hill, 1964, pp. 15-64.
+    \bibitem{ref2} W.-K. Chen, \textit{Linear Networks and Systems}. Belmont, CA: Wadsworth, 1993, pp. 123-135.
+    \bibitem{ref3} S. Chen, B. Mulgrew, and P. M. Grant, "A clustering technique for digital communications," \textit{IEEE Trans. Neural Networks}, vol. 4, pp. 570-578, July 1993.
+\end{thebibliography}
+
+\appendix
+\section*{Appendix}
+Appendices appear after references if needed. They may use a smaller font size.
+
+\end{document}
