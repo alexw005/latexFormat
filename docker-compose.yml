@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  latex:
+    image: texlive/texlive
+    working_dir: /workdir
+    volumes:
+      - .:/workdir
+    entrypoint: [ "pdflatex", "sample.tex" ]
