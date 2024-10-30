@@ -5,12 +5,25 @@
 \usepackage{amsmath}
 \usepackage{cite}
 \usepackage{sectsty} % For customizing section fonts
+\usepackage{titlesec}
+
+% Set the format for section numbering
+\titleformat{\section}
+  {\fontsize{12}{14}\selectfont\bfseries} % Format
+  {\thesection .}             % Label
+  {0.2em}                         % Separation between label and title
+  {}                            % Formatting for the title
+
+% Set spacing before and after the section
+\titlespacing{\section}
+  {0pt}     % Left indentation
+  {10pt}    % Before spacing
+  {10pt}    % After spacing
 
 % Set spacing between columns
 \setlength{\columnsep}{12.7mm}
 
 % Custom Section Fonts
-\sectionfont{\fontsize{12}{14}\selectfont\bfseries}
 \subsectionfont{\fontsize{10}{12}\selectfont\bfseries}
 \subsubsectionfont{\fontsize{10}{12}\selectfont\itshape}
 

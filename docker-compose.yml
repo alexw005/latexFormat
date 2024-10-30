@@ -6,4 +6,4 @@ services:
     working_dir: /workdir
     volumes:
       - .:/workdir
-    entrypoint: [ "pdflatex", "sample.tex" ]
+    entrypoint: [ "pdflatex", "eletrika.tex" ]
