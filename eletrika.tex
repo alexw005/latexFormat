@@ -7,6 +7,9 @@
 \usepackage{sectsty} % For customizing section fonts
 \usepackage{titlesec}
 \usepackage{caption}
+\usepackage{indentfirst} % Indent the first paragraph of each section
+
+\setlength{\parindent}{10pt} % Set global paragraph indentation
 
 
 % Set spacing between columns
@@ -40,7 +43,6 @@
   {10pt}    % Before spacing
   {6pt}    % After spacing
 
-
 % Set spacing after the table caption
 \captionsetup[table]{skip=6pt} % Adjust the value as needed
 
@@ -60,14 +62,18 @@
 \textbf{Keywords:} Enter up to five keywords here, separated by commas.
 
 \vspace{0.2cm}
+
 ]
 
 % Main Sections
 \section{Introduction}
+\noindent
 This document serves as a template for creating submissions to the *ELEKTRIKA* journal. Structure your paper into sections, including an abstract, introduction, and main content. Ensure each section conforms to the journal’s two-column layout.
 
 \section{Formatting}
-The manuscript is in A4 size with 17.8 mm top and bottom margins and 16.5 mm left and right margins. Text should be set in 10 pt Times New Roman. The first paragraph of each section starts flush left, and subsequent paragraphs are indented by 0.36 cm.
+The manuscript is in A4 size with 17.8 mm top and bottom margins and 16.5 mm left and right margins. Text should be set in 10 pt Times New Roman. 
+
+The first paragraph of each section starts flush left, and subsequent paragraphs are indented by 0.36 cm.
 
 \subsection{Equations, Symbols, and Units}
 Use only SI units throughout the document. Insert equations using the `equation` environment, centered with numbers aligned to the right:
